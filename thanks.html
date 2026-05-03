@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Request Received · Wealth Command Centre</title>
+  <meta name="description" content="Your Wealth Command Centre founding access request has been received." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --obsidian: #07090d;
+      --gold: #c9a84c;
+      --gold-light: #e4c97a;
+      --ivory: #f3efe2;
+      --muted: #8f98aa;
+      --line: rgba(228, 201, 122, 0.22);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      min-height: 100svh;
+      margin: 0;
+      color: var(--ivory);
+      font-family: "DM Sans", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 78% 20%, rgba(201, 168, 76, 0.17), transparent 28rem),
+        radial-gradient(circle at 18% 82%, rgba(228, 201, 122, 0.08), transparent 24rem),
+        linear-gradient(135deg, #07090d 0%, #111720 56%, #080a0f 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.2;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+      background-size: 28px 28px;
+      mask-image: linear-gradient(to bottom, black, transparent 90%);
+    }
+
+    .nav {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px clamp(20px, 5vw, 72px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(243, 239, 226, 0.75);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--gold-light), #83672b);
+      color: #080a0f;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 17px;
+      font-weight: 700;
+    }
+
+    .home-link {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 18px;
+      border: 1px solid rgba(228, 201, 122, 0.46);
+      border-radius: 999px;
+      color: var(--gold-light);
+      background: rgba(201, 168, 76, 0.08);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      min-height: calc(100svh - 100px);
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(340px, 0.58fr);
+      gap: clamp(36px, 7vw, 112px);
+      align-items: center;
+      padding: 42px clamp(22px, 5vw, 76px) 76px;
+    }
+
+    .kicker {
+      color: var(--gold-light);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(64px, 8vw, 132px);
+      line-height: 0.9;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 660px;
+      margin: 28px 0 0;
+      color: rgba(243, 239, 226, 0.72);
+      font-size: clamp(17px, 1.45vw, 21px);
+      line-height: 1.65;
+    }
+
+    .next {
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      padding: 28px;
+      background:
+        linear-gradient(180deg, rgba(228, 201, 122, 0.06), transparent 52%),
+        rgba(12, 16, 23, 0.72);
+      box-shadow: 0 28px 80px rgba(0,0,0,0.34);
+    }
+
+    .next h2 {
+      margin: 0 0 20px;
+      color: var(--ivory);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 34px;
+      line-height: 1.05;
+    }
+
+    .step {
+      padding: 18px 0;
+      border-top: 1px solid rgba(153, 166, 190, 0.14);
+    }
+
+    .step:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .step strong {
+      display: block;
+      color: var(--gold-light);
+      font-size: 11px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 7px;
+    }
+
+    .step span {
+      color: rgba(243, 239, 226, 0.72);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .fine {
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.55;
+    }
+
+    @media (max-width: 860px) {
+      .nav {
+        padding: 20px 22px;
+      }
+
+      .home-link {
+        display: none;
+      }
+
+      main {
+        min-height: auto;
+        grid-template-columns: 1fr;
+        padding: 54px 22px 70px;
+      }
+
+      h1 {
+        font-size: clamp(56px, 16vw, 78px);
+      }
+
+      .next {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+  <nav class="nav" aria-label="Primary">
+    <div class="brand"><span class="brand-mark">W</span><span>Wealth Command Centre</span></div>
+    <a class="home-link" href="index.html">Return to preview</a>
+  </nav>
+
+  <main>
+    <section>
+      <div class="kicker">Founding access request received</div>
+      <h1>Your place has been noted.</h1>
+      <p class="lead">Thank you for requesting early access to Wealth Command Centre. The first release is being kept intentionally small so the product can be shaped with the right households, not a noisy crowd.</p>
+    </section>
+
+    <aside class="next" aria-label="What happens next">
+      <h2>What happens next</h2>
+      <div class="step">
+        <strong>01 · Confirmation</strong>
+        <span>Your email has been added to the founding waitlist.</span>
+      </div>
+      <div class="step">
+        <strong>02 · Private preview</strong>
+        <span>Selected households will be invited into the first working version as the dashboard matures.</span>
+      </div>
+      <div class="step">
+        <strong>03 · Shape the product</strong>
+        <span>Early members will influence the decision views, UK tax-year logic and scenario tools before wider release.</span>
+      </div>
+      <p class="fine">Wealth Command Centre is not financial advice. It is being built as a private operating surface for household clarity.</p>
+    </aside>
+  </main>
+</body>
+</html>
