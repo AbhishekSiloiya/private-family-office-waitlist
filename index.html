@@ -197,6 +197,19 @@
       white-space: nowrap;
     }
 
+    .form-status {
+      grid-column: 1 / -1;
+      min-height: 18px;
+      margin: 0 8px;
+      color: rgba(243, 239, 226, 0.68);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .form-status.error {
+      color: #f3a2a2;
+    }
+
     .sr-only {
       position: absolute;
       width: 1px;
@@ -644,13 +657,14 @@
           <h1>Wealth Command Centre</h1>
           <p class="hero-line">The private family office dashboard for ambitious UK households.</p>
           <p class="deck">See income, PAYE, pensions, ISAs, household spend, cash buffer and long-term choices in one calm operating view.</p>
-          <form class="hero-form" action="https://formspree.io/f/mzdodkog" method="POST">
+          <form class="hero-form" action="https://formspree.io/f/mzdodkog" method="POST" data-waitlist-form>
             <input type="hidden" name="subject" value="New Wealth Command Centre waitlist request">
             <input type="hidden" name="source" value="Hero waitlist form">
             <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
             <label class="sr-only" for="hero-email">Email address</label>
             <input id="hero-email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
             <button class="button primary" type="submit">Request access</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
           </form>
           <div class="signal-list" aria-label="Product coverage">
             <span>PAYE &amp; NI</span>
@@ -751,13 +765,14 @@
             <strong>The promise is simple:</strong> see the household position clearly, then make better decisions with less noise.
           </p>
         </div>
-        <form class="form-panel" action="https://formspree.io/f/mzdodkog" method="POST">
+        <form class="form-panel" action="https://formspree.io/f/mzdodkog" method="POST" data-waitlist-form>
           <input type="hidden" name="subject" value="New Wealth Command Centre waitlist request">
           <input type="hidden" name="source" value="Private family office waitlist page">
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none">
           <label for="email">Request founding access</label>
           <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
           <button class="button primary" type="submit">Join the waitlist</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
           <p class="fine">Founding access will be limited. Your email will only be used for early access updates.</p>
         </form>
       </section>
@@ -768,5 +783,40 @@
       <span>Not financial advice. Built for household clarity.</span>
     </footer>
   </div>
+  <script>
+    document.querySelectorAll("[data-waitlist-form]").forEach((form) => {
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+
+        const button = form.querySelector("button[type='submit']");
+        const status = form.querySelector(".form-status");
+        const originalLabel = button.textContent;
+
+        status.textContent = "Securing your request...";
+        status.classList.remove("error");
+        button.disabled = true;
+        button.textContent = "Sending...";
+
+        try {
+          const response = await fetch(form.action, {
+            method: "POST",
+            body: new FormData(form),
+            headers: { "Accept": "application/json" }
+          });
+
+          if (!response.ok) {
+            throw new Error("Form submission failed");
+          }
+
+          window.location.href = "thanks.html";
+        } catch (error) {
+          status.textContent = "Something did not go through. Please try again.";
+          status.classList.add("error");
+          button.disabled = false;
+          button.textContent = originalLabel;
+        }
+      });
+    });
+  </script>
 </body>
 </html>
