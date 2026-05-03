@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#080a0f"/><stop offset=".5" stop-color="#111722"/><stop offset="1" stop-color="#07090d"/></linearGradient>
+    <linearGradient id="gold" x1="0" x2="1"><stop stop-color="#e4c97a"/><stop offset="1" stop-color="#9b7a31"/></linearGradient>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ivory{fill:#f3efe2}.muted{fill:#8f98aa}.goldText{fill:#e4c97a}.line{stroke:#e4c97a;stroke-opacity:.28}</style>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="540" cy="665" r="430" fill="#c9a84c" opacity=".08"/>
+  <path d="M70 102h940M70 1248h940" class="line"/>
+  <text x="76" y="172" class="sans goldText" font-size="24" letter-spacing="7" font-weight="700">FOUNDING ACCESS</text>
+  <text x="76" y="315" class="serif ivory" font-size="100" font-weight="700">Opening soon</text>
+  <text x="76" y="423" class="serif ivory" font-size="100" font-weight="700">for ambitious</text>
+  <text x="76" y="531" class="serif ivory" font-size="100" font-weight="700">UK households.</text>
+  <text x="76" y="705" class="sans muted" font-size="34">A small waitlist will preview the</text>
+  <text x="76" y="759" class="sans muted" font-size="34">first private release and shape</text>
+  <text x="76" y="813" class="sans muted" font-size="34">what this becomes.</text>
+  <g transform="translate(76 930)">
+    <rect width="928" height="166" rx="28" fill="none" stroke="#e4c97a" stroke-opacity=".45"/>
+    <rect x="34" y="38" width="94" height="94" rx="24" fill="url(#gold)"/>
+    <text x="63" y="100" class="serif" font-size="42" font-weight="700" fill="#080a0f">W</text>
+    <text x="162" y="74" class="sans goldText" font-size="23" letter-spacing="4" font-weight="700">JOIN THE WAITLIST</text>
+    <text x="162" y="118" class="sans ivory" font-size="34" font-weight="700">Link in post.</text>
+  </g>
+  <text x="76" y="1206" class="sans muted" font-size="26">Private by design. Built for clarity. Not financial advice.</text>
+</svg>
