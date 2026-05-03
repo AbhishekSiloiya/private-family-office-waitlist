@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#080a0f"/>
+      <stop offset="0.55" stop-color="#111722"/>
+      <stop offset="1" stop-color="#07090d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop stop-color="#e4c97a"/>
+      <stop offset="1" stop-color="#9b7a31"/>
+    </linearGradient>
+    <style>
+      .serif{font-family:Georgia,'Times New Roman',serif}
+      .sans{font-family:Arial,Helvetica,sans-serif}
+      .label{font-size:24px;letter-spacing:7px;text-transform:uppercase;fill:#e4c97a;font-weight:700}
+      .muted{fill:#8f98aa}
+      .ivory{fill:#f3efe2}
+      .line{stroke:#e4c97a;stroke-opacity:.26}
+    </style>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <circle cx="880" cy="150" r="330" fill="#c9a84c" opacity=".12"/>
+  <path d="M70 102h940M70 1248h940" class="line"/>
+  <text x="76" y="172" class="sans label">Private beta / UK</text>
+  <text x="76" y="300" class="serif ivory" font-size="94" font-weight="700">Your household</text>
+  <text x="76" y="396" class="serif ivory" font-size="94" font-weight="700">finances have</text>
+  <text x="76" y="492" class="serif ivory" font-size="94" font-weight="700">outgrown</text>
+  <text x="76" y="588" class="serif ivory" font-size="94" font-weight="700">spreadsheets.</text>
+  <text x="76" y="745" class="sans muted" font-size="34">Income. PAYE. Mortgage.</text>
+  <text x="76" y="797" class="sans muted" font-size="34">Pensions. ISAs. Childcare.</text>
+  <text x="76" y="849" class="sans muted" font-size="34">Cash buffer. Future decisions.</text>
+  <g transform="translate(76 930)">
+    <rect width="928" height="210" rx="28" fill="#121822" stroke="#2a3550"/>
+    <text x="34" y="58" class="sans muted" font-size="22" letter-spacing="4">CURRENT REALITY</text>
+    <g fill="none" stroke-width="3" stroke-linecap="round">
+      <path d="M38 110 C170 55 260 170 390 110 S610 68 760 115 S880 152 896 88" stroke="#e4c97a" opacity=".72"/>
+      <path d="M38 150 C160 132 220 93 338 142 S560 188 674 136 S815 84 896 128" stroke="#2dd4a0" opacity=".62"/>
+      <path d="M38 78 C156 94 247 110 350 83 S560 30 688 88 S830 150 896 108" stroke="#f05252" opacity=".48"/>
+    </g>
+  </g>
+  <text x="76" y="1218" class="sans ivory" font-size="30" font-weight="700">A better interface is overdue.</text>
+</svg>
