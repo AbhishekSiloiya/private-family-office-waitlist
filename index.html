@@ -420,21 +420,60 @@
       margin: 0;
     }
 
-    .carousel-grid {
+    .feature-grid {
       display: grid;
-      grid-template-columns: repeat(5, minmax(260px, 1fr));
-      gap: 18px;
+      grid-template-columns: repeat(5, minmax(220px, 1fr));
+      gap: 14px;
       overflow-x: auto;
-      padding-bottom: 10px;
+      padding-bottom: 8px;
     }
 
-    .carousel-grid img {
-      width: 100%;
-      min-width: 260px;
-      border-radius: 16px;
-      border: 1px solid rgba(228, 201, 122, 0.2);
-      background: #090b10;
-      box-shadow: 0 18px 42px rgba(0,0,0,0.28);
+    .feature-tile {
+      min-height: 310px;
+      min-width: 220px;
+      border: 1px solid rgba(228, 201, 122, 0.18);
+      border-radius: 18px;
+      background:
+        linear-gradient(180deg, rgba(228, 201, 122, 0.055), transparent 42%),
+        rgba(13, 17, 24, 0.76);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 18px 48px rgba(0,0,0,0.22);
+    }
+
+    .feature-index {
+      color: var(--gold-light);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .feature-tile h3 {
+      margin: 26px 0 14px;
+      color: var(--ivory);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 30px;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .feature-tile p {
+      margin: 0;
+      color: rgba(243, 239, 226, 0.66);
+      line-height: 1.55;
+      font-size: 14px;
+    }
+
+    .feature-status {
+      margin-top: 28px;
+      color: rgba(228, 201, 122, 0.78);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
     }
 
     .waitlist {
@@ -584,7 +623,7 @@
         grid-template-columns: 1fr;
       }
       .number.gold { font-size: 34px; }
-      .carousel-grid {
+      .feature-grid {
         grid-template-columns: repeat(5, 78vw);
       }
     }
@@ -655,15 +694,50 @@
 
       <section>
         <div class="section-head">
-          <h2>Five-slide LinkedIn carousel.</h2>
-          <p>Designed as a premium teaser: one idea per slide, heavy product reality, and a founding-access close.</p>
+          <h2>Built for the decisions spreadsheets cannot hold.</h2>
+          <p>Founding members will help shape the first release: a calmer way to understand the household position, model choices and act earlier.</p>
         </div>
-        <div class="carousel-grid">
-          <img src="assets/slide-01.svg" alt="Slide 1: Your household finances have outgrown spreadsheets">
-          <img src="assets/slide-02.svg" alt="Slide 2: UK family wealth is not one number">
-          <img src="assets/slide-03.svg" alt="Slide 3: The private family office dashboard">
-          <img src="assets/slide-04.svg" alt="Slide 4: From tracking to decision intelligence">
-          <img src="assets/slide-05.svg" alt="Slide 5: Founding access is opening">
+        <div class="feature-grid">
+          <article class="feature-tile">
+            <div>
+              <div class="feature-index">01 · Position</div>
+              <h3>See the full household picture.</h3>
+              <p>Bring income, spending, cash, assets and liabilities into one operating view instead of stitching it together across accounts and files.</p>
+            </div>
+            <div class="feature-status">Private beta</div>
+          </article>
+          <article class="feature-tile">
+            <div>
+              <div class="feature-index">02 · Flow</div>
+              <h3>Understand where money is moving.</h3>
+              <p>Track monthly surplus, commitments and recurring pressure points so the household position is clear before decisions are made.</p>
+            </div>
+            <div class="feature-status">Coming soon</div>
+          </article>
+          <article class="feature-tile">
+            <div>
+              <div class="feature-index">03 · Tax year</div>
+              <h3>Plan around UK allowances.</h3>
+              <p>See PAYE, NI, pension contributions, ISA room and tax-year context together, without turning family finance into a spreadsheet ritual.</p>
+            </div>
+            <div class="feature-status">UK-first</div>
+          </article>
+          <article class="feature-tile">
+            <div>
+              <div class="feature-index">04 · Resilience</div>
+              <h3>Know how strong the buffer is.</h3>
+              <p>Monitor cash runway, household commitments and emergency cover so confidence is based on the actual monthly reality.</p>
+            </div>
+            <div class="feature-status">Early access</div>
+          </article>
+          <article class="feature-tile">
+            <div>
+              <div class="feature-index">05 · Scenarios</div>
+              <h3>Model the next big decision.</h3>
+              <p>Explore what changes when income, childcare, housing, investing or pension choices move, before those choices become urgent.</p>
+            </div>
+            <div class="feature-status">In build</div>
+          </article>
         </div>
       </section>
 
