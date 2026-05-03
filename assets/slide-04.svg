@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07090d"/><stop offset=".6" stop-color="#111722"/><stop offset="1" stop-color="#090b10"/></linearGradient>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ivory{fill:#f3efe2}.muted{fill:#8f98aa}.gold{fill:#e4c97a}.green{fill:#2dd4a0}.red{fill:#f05252}.line{stroke:#e4c97a;stroke-opacity:.24}</style>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <path d="M70 102h940M70 1248h940" class="line"/>
+  <text x="76" y="172" class="sans gold" font-size="24" letter-spacing="7" font-weight="700">THE SHIFT</text>
+  <text x="76" y="306" class="serif ivory" font-size="94" font-weight="700">Not budgeting.</text>
+  <text x="76" y="410" class="serif ivory" font-size="94" font-weight="700">Decision</text>
+  <text x="76" y="514" class="serif ivory" font-size="94" font-weight="700">intelligence.</text>
+  <g transform="translate(82 650)" class="sans">
+    <rect width="916" height="410" rx="34" fill="#121822" stroke="#2a3550"/>
+    <text x="42" y="66" class="muted" font-size="22" letter-spacing="4">QUESTIONS THE DASHBOARD SHOULD ANSWER</text>
+    <g font-size="34" font-weight="700">
+      <text x="42" y="145" class="ivory">What is our real monthly position?</text>
+      <text x="42" y="220" class="ivory">How strong is our cash buffer?</text>
+      <text x="42" y="295" class="ivory">Are we using ISA and pension room well?</text>
+      <text x="42" y="370" class="ivory">What changes if life changes?</text>
+    </g>
+    <g transform="translate(720 116)" stroke-width="14" stroke-linecap="round">
+      <path d="M0 0h110" stroke="#2dd4a0"/>
+      <path d="M0 75h150" stroke="#e4c97a"/>
+      <path d="M0 150h85" stroke="#5b8dee"/>
+      <path d="M0 225h130" stroke="#f05252"/>
+    </g>
+  </g>
+  <text x="76" y="1196" class="sans muted" font-size="30">
+    See the position. See the trade-off. Decide with clarity.
+  </text>
+</svg>
