@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#07090d"/><stop offset=".62" stop-color="#111722"/><stop offset="1" stop-color="#090b10"/></linearGradient>
+    <style>.serif{font-family:Georgia,'Times New Roman',serif}.sans{font-family:Arial,Helvetica,sans-serif}.ivory{fill:#f3efe2}.muted{fill:#8f98aa}.gold{fill:#e4c97a}.green{fill:#2dd4a0}.red{fill:#f05252}.line{stroke:#e4c97a;stroke-opacity:.24}</style>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#bg)"/>
+  <path d="M70 102h940M70 1248h940" class="line"/>
+  <text x="76" y="172" class="sans gold" font-size="24" letter-spacing="7" font-weight="700">THE UK PROBLEM</text>
+  <text x="76" y="306" class="serif ivory" font-size="92" font-weight="700">UK family wealth</text>
+  <text x="76" y="402" class="serif ivory" font-size="92" font-weight="700">is not one number.</text>
+  <text x="76" y="560" class="sans muted" font-size="32">It is a moving system of tax years,</text>
+  <text x="76" y="610" class="sans muted" font-size="32">allowances, pension choices, property</text>
+  <text x="76" y="660" class="sans muted" font-size="32">costs and household commitments.</text>
+  <g transform="translate(78 760)" class="sans">
+    <rect width="924" height="340" rx="30" fill="#121822" stroke="#2a3550"/>
+    <g transform="translate(42 50)">
+      <text class="muted" font-size="21" letter-spacing="4">WHAT USUALLY LIVES IN SILOS</text>
+      <g font-size="28" font-weight="700">
+        <text x="0" y="88" class="ivory">PAYE and NI</text>
+        <text x="0" y="154" class="ivory">Pensions</text>
+        <text x="0" y="220" class="ivory">ISA allowance</text>
+        <text x="450" y="88" class="ivory">Mortgage / rent</text>
+        <text x="450" y="154" class="ivory">Childcare</text>
+        <text x="450" y="220" class="ivory">Cash buffer</text>
+      </g>
+      <g stroke-width="12" stroke-linecap="round">
+        <path d="M250 80h120" stroke="#e4c97a"/>
+        <path d="M188 146h180" stroke="#2dd4a0"/>
+        <path d="M230 212h138" stroke="#5b8dee"/>
+        <path d="M690 80h140" stroke="#f05252"/>
+        <path d="M596 146h234" stroke="#c9a84c"/>
+        <path d="M630 212h200" stroke="#2dd4a0"/>
+      </g>
+    </g>
+  </g>
+  <text x="76" y="1206" class="sans ivory" font-size="32" font-weight="700">The dashboard has to understand the UK household.</text>
+</svg>
